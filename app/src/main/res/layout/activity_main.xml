@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:layout_above="@id/nums"/>
+    
+    <LinearLayout
+        android:id="@+id/nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <!--    % AVG 7 4 1 00    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <Button
+                android:id="@+id/modulus"
+                android:text="%"
+                style="@style/button4"/>
+
+            <Button
+                android:id="@+id/Average"
+                android:text="AVG"
+                style="@style/button4"/>
+
+            <Button
+                android:id="@+id/num7"
+                android:text="7"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/num4"
+                android:text="4"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/num1"
+                android:text="1"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/num00"
+                android:text="00"
+                style="@style/button2"/>
+            
+        </LinearLayout>
+
+        <!--    √ ! 8 5 2 0    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/square_root"
+                android:text="√"
+                style="@style/button4"/>
+
+            <Button
+                android:id="@+id/factorial"
+                android:text="!"
+                style="@style/button4"/>
+
+            <Button
+                android:id="@+id/num8"
+                android:text="8"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/num5"
+                android:text="5"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/num2"
+                android:text="2"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/num0"
+                android:text="0"
+                style="@style/button2"/>
+
+        </LinearLayout>
+
+        <!--    ^ K 9 6 3 .    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/power"
+                android:text="^"
+                style="@style/button4"/>
+
+            <Button
+                android:id="@+id/klear"
+                android:text="Kl"
+                style="@style/button3"/>
+
+            <Button
+                android:id="@+id/num9"
+                android:text="9"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/num6"
+                android:text="6"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/num3"
+                android:text="3"
+                style="@style/button2"/>
+
+            <Button
+                android:id="@+id/dot"
+                android:text="."
+                style="@style/button2"/>
+
+        </LinearLayout>
+
+        <!--    = X + - * /    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/equals"
+                android:text="="
+                style="@style/button1"/>
+
+            <Button
+                android:id="@+id/backspace"
+                android:text="X"
+                style="@style/button3"/>
+
+            <Button
+                android:id="@+id/sum"
+                android:text="+"
+                style="@style/button1"/>
+
+            <Button
+                android:id="@+id/difference"
+                android:text="-"
+                style="@style/button1"/>
+
+            <Button
+                android:id="@+id/product"
+                android:text="*"
+                style="@style/button1"/>
+
+            <Button
+                android:id="@+id/division"
+                android:text="/"
+                style="@style/button1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
